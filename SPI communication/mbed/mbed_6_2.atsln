@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{B4FC4A29-A702-4797-A4C5-E537CF6ECA50}") = "mbed", "mbed_6_2.cppproj", "{8EC8567D-9814-435B-A001-7683545FB445}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EC8567D-9814-435B-A001-7683545FB445}.Debug|ARM.ActiveCfg = Debug|ARM
+		{8EC8567D-9814-435B-A001-7683545FB445}.Debug|ARM.Build.0 = Debug|ARM
+		{8EC8567D-9814-435B-A001-7683545FB445}.Release|ARM.ActiveCfg = Release|ARM
+		{8EC8567D-9814-435B-A001-7683545FB445}.Release|ARM.Build.0 = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
