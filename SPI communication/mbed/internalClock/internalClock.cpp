@@ -9,15 +9,23 @@
 #include "internalClock.h"
 DigitalOut led(LED1);
 //struct rtc_module rtc_instance;
-
+volatile uint8_t ledCount=0;
+volatile uint8_t timeOut;
 void isrInternalClok(void){
-
-		led=!led;
+		timeOut++;
+		if(ledCount>=20){
+			led=!led;
+			ledCount=0;
+		}
+		else{
+			ledCount++;
+		}
 }
 void RTC_Handler( void ){
 	//pc.printf("ISR");
 	RTC->MODE0.INTFLAG.bit.CMP0=1;		//disable the flag COMPARE
 	RTC->MODE0.INTFLAG.bit.OVF=1;		//disable the flag COMPARE
+	
 	isrInternalClok();
 }
 
